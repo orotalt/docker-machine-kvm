@@ -60,9 +60,11 @@ const (
     </graphics>
     <interface type='network'>
       <source network='{{.Network}}'/>
+	  <model type='virtio'/>
     </interface>
     <interface type='network'>
       <source network='{{.PrivateNetwork}}'/>
+	  <model type='virtio'/>
     </interface>
   </devices>
 </domain>`
